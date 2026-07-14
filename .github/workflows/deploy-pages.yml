@@ -39,6 +39,9 @@ jobs:
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
+        with:
+          # Auto-enable Pages when the repo has not been configured yet
+          enablement: true
 
       - name: Prepare static site artifact
         run: |
